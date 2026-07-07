@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+ 
+        .red a {
+        color: rgb(17, 10, 10);
+        text-decoration: none;
+        padding: 12px 20px;
+        border: 2px solid #cf630a;
+        border-radius: 12px;
+        display: inline-block;
+        font-size: 20px;
+        transition: all 0.3 ease;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(109, 42, 42);
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container{
+        max-width: 800px;
+      }
+      .text-title {
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      .text-center {
+        text-align: center;
+      }
+
+      .card {
+        width: 1000px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px;
+        margin-bottom: 20px ;
+      }
+
+      pre {
+        background-color: white;
+        border-left: 4px solid crimson;
+        padding-top: 16px;
+        font-size: 16px;
+      }
+      .note {
+        color: cornflowerblue ;
+        background-color: hotpink;
+      }
+
+      .note ::before {
+        content: "🙌";
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="text-title">Workshop: HTML Heading</h1>
+    <h2 class="red"><a href="index.html">กลับไปหน้าเเรก</a></h2>
+    <p class="text-title" >&lt;h1> – &lt;h6> และการปรับขนาดหัวข้อด้วย CSS</p>
+    <div class="card">
+      <h2>1. ความหมายของ Headings (H1–H6)</h2>
+      <p>HTML มีหัวข้อทั้งหมด 6 ระดับ</p>
+      <ul>
+        <li> <span class="box">H1</span>หัวข้อใหญ่สุด ใช้ส าหรับชื่อหน้าเว็บหรือหัวข้อหล</li>
+        <li> <span class="box">H2</span>หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
+        <li> <span class="box">H3</span>หัวข้อย่อยภายใน</li>
+        <li> <span class="box">H4</span>ย่อยลงไปอีกระดับ</li>
+        <li> <span class="box">H5</span>ใช้น้อย แต่เน้นล าดับข้อมูล</li>
+        <li> <span class="box">H6</span>เล็กสุด ใช้กับหัวข้อระดับลึก</li>
+      </ul>
+      <p class="note" style="border-left: 4px solid chocolate">😒H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร</p>
+      
+    </div>
+
+    <div class="card">
+    <h2>2. ตัวอย่างการใช ้H1–H6</h2>
+
+    
+  <pre>
+  <code>
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;h2&gt;HTML Basics&lt;/h2&gt;
+    &lt;h3&gt;What is HTML?&lt;/h3&gt;
+    &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+    &lt;h5&gt;Example Code&lt;/h5&gt;
+    &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+      </code>
+    </pre>
+
+    
+
+    <h1>H1: Welcome to My Website</h1>
+    <h2>H2: HTML Basics</h2>
+    <h3>H3: What is HTML?</h3>
+    <h4>H4: HTML Syntax</h4>
+    <h5>H5: Example Code</h5>
+    <h6 class="note">H6: Note about heading size</h6>
+    </div>
+
+    <div class="card">
+    <h2>2. ตัวอย่างการใช ้H1–H6</h2>
+
+    
+  <pre>
+  <code>
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;h2&gt;HTML Basics&lt;/h2&gt;
+    &lt;h3&gt;What is HTML?&lt;/h3&gt;
+    &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+    &lt;h5&gt;Example Code&lt;/h5&gt;
+    &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+      </code>
+    </pre>
+
+    
+
+    <h1>H1: Welcome to My Website</h1>
+    <h2>H2: HTML Basics</h2>
+    <h3>H3: What is HTML?</h3>
+    <h4>H4: HTML Syntax</h4>
+    <h5>H5: Example Code</h5>
+    <h6 class="note">H6: Note about heading size</h6>
+    </div>
+
+    <div class="card">
+      <h2>3. ถ ้าอยากให ้หัวข ้อ “ใหญ่กว่า” หรือ “เล็กกว่า” ขนาดเดิม?</h2>
+      ใช ้CSS แทนการเลือก h1–h6 ผดิ ล าดับ เชน่ :
+      <pre>
+        <code>
+          h3 {
+font-size: 40px; /* ท าให้ H3 ใหญ่เท่า H1 ได ้ */
+color: #c4005a;
+}
+h5 {
+font-si
+        </code>
+      </pre>
+      หรือสามารถก าหนดเฉพาะบางหัวข ้อได ้:
+      <code>
+        <pre>
+        &lt;h3 style="font-size: 50px; color: blue;"&gt;Big Custom Heading&lt;/h3&gt;
+        </pre>
+      </code>
+      จ าไว ้ว่า ล าดับหัวข ้อควรเป็น H1 → H2 → H3 ตามโครงสรา้งเนื้อหา ไม่ควรใช ้H5 เพื่อให ้ “ตัวเล็กลง” หรอื ใช ้H1
+เพื่อให ้ “ตัวใหญ่ขึ้น” → ต ้องแก ้ด ้วย CSS เท่านั้น
+
+    </div>
+  </body>
+</html>
