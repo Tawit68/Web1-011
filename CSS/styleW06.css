@@ -1,0 +1,197 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sarabun";
+  background: white;
+
+  color: rgb(59, 52, 52);
+  line-height: 1.6;
+}
+
+.container {
+  /* border: 1px solid rgb(240, 11, 11);
+  padding: 20px;
+  margin: 20px; */
+}
+/* Header Section */
+.site-header {
+  /* border: 1px solid rgb(255, 94, 0);
+  padding: 20px;
+  margin: 20px; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(110deg, rgb(209, 121, 7), rgb(247, 211, 8));
+  padding: 8px 20px;
+}
+
+.brand {
+  /* border: 1px solid rgb(245, 229, 6);
+  padding: 20px;
+  margin: 20px; */
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  color: white;
+}
+
+.brand-logo {
+  
+  background-color: wheat;
+  
+  border-radius: 50%;
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.brand-text p{
+  font-size: 14px;
+  opacity: 0.2;
+}
+
+.brand-text h2{
+  font-size: 24px;
+}
+/* main Section */
+.main-nav {
+  /* border: 1px solid rgb(245, 229, 6);
+  padding: 20px;
+  margin: 20px; */
+  
+}
+
+/* nav */
+.nav-list {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+
+  padding: 8px 15px;
+
+  transition: 2s;
+}
+
+.nav-list a:hover {
+  background-color: rgb(172, 102, 21);
+  border-radius: 8px;
+}
+
+.main-layout { 
+  display: grid;
+  grid-template-columns: 1fr 390px; 
+  padding: 10px; 
+} 
+
+/* left content */
+.left-content {
+  /* border: 1px solid rgb(255, 94, 0);
+  padding: 50px;
+  margin: 20px;
+  flex: 3; */ 
+}
+
+.hero {
+  /* border: 1px solid rgb(253, 207, 0);
+  padding: 50px;
+  margin: 20px; */
+  
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+
+  padding: 26px 36px;
+  background: linear-gradient(90deg, white, rgb(218, 155, 19)); 
+
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px black;  
+
+  align-items: center;
+  
+}
+
+.hero-text {
+  color: blue; 
+  font-size: 36px;
+}
+
+.hero-text h1{
+  font-size: 36px;
+  color: blue; 
+  line-height: 1.8; 
+}
+
+.hero-text p{
+  font-size: 16px;
+  color: blue;
+  font-weight: 500;  
+}
+
+.hero-photo img {
+  width: 500px;  
+  height: 100px;
+  border: 3px solid rgb(92, 85, 85); 
+  border-radius: 10px;
+  
+  box-shadow: 0 4px 8px black; 
+
+
+   /*
+    object-fit: contain ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)
+    object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)
+    object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก
+    */
+
+}
+
+.card {
+  border: 1px solid rgb(228, 26, 12);
+  padding: 50px;
+  margin: 20px;
+}
+
+
+
+/* right sidbar */
+.right-sidebar {
+  border: 1px solid rgb(228, 26, 12);
+  padding: 50px;
+  margin: 20px; 
+}
+.right-sidebar .side-card {
+
+}
+.right-sidebar .submit-card {
+
+}
+
+/* footer Section */
+.tip-box {
+  border: 1px solid rgb(255, 94, 0);
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
