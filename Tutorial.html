@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styleTutorial.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="brand">
+            <div class="brand-text">
+                <div>
+                    <h2 class="color-c">HTML Totorial</h2>
+                    <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
+                </div>
+        </nav>
+      </div>
+        <header class="brand-c">
+            <div>
+            <h2 class="color-c">HTML (HyperText Markup Language)</h2>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and design web pages on the internet. It defines the structure and layout of a web page by using a variety of tags and attributes.</p>
+            <div class="brand-link">
+                <a href="index.html">Back To Home</a>
+                </div>
+            </div>
+        </header>
+        <nav class="nav-c">
+            <div class="card">
+                <span class="color-c">
+                    <h2>Topics</h2>
+                </span>
+                <ul>
+                    <a href="#Introduction to HTML"><li>Introduction to HTML</li></a>
+                    <a href="#HTML Document Structure"><li>HTML Document Structure</li></a>
+                    <a href="#Heading"><li>Heading</li></a>
+                    <a href="#Paragraph"><li>Paragraph</li></a>
+                    <a href="#Text Formatting"><li>Text Formatting</li></a>
+                    <a href="#Creating Links"><li>Creating Links</li></a>
+                    <a href="#Lists (Ordered and Unordered)"><li>Lists (Ordered and Unordered)</li></a>
+                    <a href="#Adding Images"><li>Adding Images</li></a>
+                    <a href="#Creating Tables"><li>Creating Tables</li></a>
+                    <a href="#HTML Forms"><li>HTML Forms</li></a>
+                    <a href="#Multimedia (Audio & Video)"><li>Multimedia (Audio & Video)</li></a>
+                    <a href="#Semantic HTML"><li>Semantic HTML</li></a>
+                </ul>
+            </div>
+            <div class="card">
+                <span class="color-c" id="Introduction to HTML">
+                    <h2>Introduction to HTML</h2>
+                </span>
+                <div class="text-right">
+                    - HTML stands for Hyper Text Markup Language <br>
+                    - HTML is the standard markup language for creating Web pages <br>
+                    - HTML describes the structure of a Web page <br>
+                    - HTML consists of a series of elements <br>
+                    - HTML elements tell the browser how to display the content <br>
+                    - HTML elements are represented by tags <br>
+                    - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on <br>
+                    - Browsers do not display the HTML tags, but use them to render the content of the page <br>
+                    - HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and <br>
+                    content of web pages <br>
+                    - HTML is not a programming language, but a markup language <br>
+                    </div>
+            </div>
+            <div class="card" id="HTML Document Structure">
+                <span class="color-c">
+                    <h2>HTML Document Structure</h2>
+                    <h4>An HTML document has the following basic structure...</h4>
+                </span>
+                <div class="text-right">
+                    HTML document has the following basic structure...
+                    คําอธิบาย:
+                    &lt;DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
+                    &lt;html &gt;: เป็นรากของเอกสาร HTML ทั้งหมด
+                    &lt;head &gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น 
+                    &lt; ชื่อหน้าเว็บ &lt;
+                    &lt;body &gt;: ส่วนที่จะแสดงผลบนหน้าเ
+                    องค์ประกอบส าคัญของ HTML
+                    แท็ก (Tags):
+                    - แท็กเริ่มต้น (Opening Tag): เช่น <h1>
+                    - แท็กปิด (Closing Tag): เช่น </h1>
+
+                    <img src="image.jpg" alt="A description of the image"> 
+                    
+                </div>
+            </div>
+            <div class="card" id="Heading">
+                <span class="color-c">
+                    <h2>Heading</h2>
+                </span>
+                <div>
+                <a href="W03-01-heading.html">Workshop</a>
+                </div>
+                <p>
+                HTML headings are defined with the  to  tags... <br>
+                - &lt;h1&gt;: Heading 1 <br>
+                - &lt;h2&gt;: Heading 2 <br>
+                - &lt;h3&gt;: Heading 3 <br>
+                - &lt;h4&gt;: Heading 4 <br>
+                - &lt;h5&gt;: Heading 5 <br>
+                - &lt;h6&gt;: Heading 6 <br>
+                </p>
+            </div>
+            <div class="card" id="Paragraph">
+                <span class="color-c">
+                    <h2>Paragraph</h2>
+                </span>
+                <p>
+                workshop <br>
+                HTML paragraphs are defined with the <br> 
+                tag... <br>
+                - &lt;p&gt;: Paragraph
+            </div>
+
+            <div class="card" id="Creating Links">
+                <span class="color-c">
+                    <h2>Creating Links</h2>
+                </span>
+                <div>
+                    <a href="W06-01-link-image.html">workshop</a>
+                </div>
+                <p>
+                HTML links are defined with the <a> tag... <br>
+                - &lt;a href="url" target=""&gt;Link text&lt;/a&gt; <br>
+                - The href attribute specifies the URL of the page the link goes to <br>
+                - The target attribute specifies where to open the linked document <br>
+                - _self: Open the linked document in the same window/tab <br>
+                - _blank: Open the linked document in a new window/tab <br>
+                - _parent: Open the linked document in the parent frame <br>
+                - _top: Open the linked document in the full body of the window <br>
+                - The link text is the visible part of the link <br>
+                - Anchor links: <br>
+                - Use the href attribute with the # symbol to link to a specific part of the page <br>
+                - Use the id attribute to define the section to link to <br>
+                - Example: &lt;a href="#section"&gt;Go to Section&lt;/a&gt; <br>
+                - Example: &lt;h3 id="section"&gt;This is the Section&lt;/h3&gt; <br>
+            </div>
+            <div class="card" id="Creating Links">
+                <span class="color-c">
+                    <h2>Creating Links</h2>
+                </span>
+                <div>
+                    <a href="W06-01-link-image.html">workshop</a>
+                </div>
+                <p>
+                HTML links are defined with the <a> tag...
+                - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
+                - The href attribute specifies the URL of the page the link goes to
+                - The target attribute specifies where to open the linked document
+                - _self: Open the linked document in the same window/tab
+                - _blank: Open the linked document in a new window/tab
+                - _parent: Open the linked document in the parent frame
+                - _top: Open the linked document in the full body of the window
+                - The link text is the visible part of the link
+                - Anchor links:
+                - Use the href attribute with the # symbol to link to a specific part of the page
+                - Use the id attribute to define the section to link to
+                - Example: &lt;a href="#section"&gt;Go to Section&lt;/a&gt;
+                - Example: &lt;h3 id="section"&gt;This is the Section&lt;/h3&gt;
+                - Email links:
+                - Use the mailto: prefix to create an email link
+                - Example: &lt;a href="mailto:support@example.com">email us&lt;/a&gt;
+                - Download links:
+                - Use the download attribute to create a download link
+                - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
+                </p>
+            </div>
+            <div class="card" id="Lists (Ordered and Unordered)">
+                <span class="color-c">
+                    <h2>Lists (Ordered and Unordered)</h2>
+                </span>
+                <div>
+                    <a href="#">workshop</a>
+                </div>
+                <p>
+                HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...
+                - &lt;ul&gt;: Unordered list
+                - &lt;ol&gt;: Ordered list
+                - &lt;li&gt;: List item
+                - Unordered list:
+                - Use the &lt;ul&gt; tag to create an unordered list
+                - Use the &lt;li&gt; tag to create each list item
+                - Example:
+                &lt;ul&gt;
+                &lt;li&gt;Coffee&lt;/li&gt;
+                &lt;li&gt;Tea&lt;/li&gt;
+                &lt;li&gt;Milk&lt;/li&gt;
+                &lt;/ul&gt;
+                - Ordered list:
+                - Use the &lt;ol&gt; tag to create an ordered list
+                - Use the &lt;li&gt; tag to create each list item
+                - Example:
+                &lt;ol&gt;
+                &lt;li&gt;Coffee&lt;/li&gt;
+                &lt;li&gt;Tea&lt;/li&gt;
+                &lt;li&gt;Milk&lt;/li&gt;
+                &lt;/ol&gt;
+                - List style types:
+                - Use the list-style-type property to define the style of the list
+                - Example: &lt;ul style="list-style-type: disc;"&gt;
+                - Example: &lt;ul style="list-style-type: circle;"&gt;
+                - Example: &lt;ul style="list-style-type: square;"&gt;
+                - Example: &lt;ul style="list-style-type: none;"&gt;
+                - Example: &lt;ol type="1"&gt;
+                - Example: &lt;ol type="A"&gt;
+                - Example: &lt;ol type="a"&gt;
+                - Example: &lt;ol type="I"&gt;
+                - Example: &lt;ol type="i"&gt;
+                - Example: &lt;ol type="A" start="3"&gt;
+                - Example: &lt;ol type="1" start="3"&gt;
+                - Example: &lt;ol style="list-style-type: decimal;"&gt;
+                - Example: &lt;ol style="list-style-type: upper-alpha;"&gt;
+                - Example: &lt;ol style="list-style-type: lower-alpha;"&gt;
+                - Example: &lt;ol style="list-style-type: upper-roman;"&gt;
+                - Example: &lt;ol style="list-style-type: lower-roman;"&gt;</p>
+            </div>
+            <div class="card" id="Adding Images">
+                <span class="color-c">
+                    <h2>Adding Images</h2>
+                </span>
+                <div>
+                    <a href="#">workshop</a>
+                </div>
+                <p>
+                HTML images are defined with the &lt;img&gt; tag...
+                - &lt;img src="url" alt="description"&gt;
+                - The src attribute specifies the URL of the image
+                - The alt attribute provides a description of the image
+                - The width and height attributes provide the size of the image
+                - Example: &lt;img src="image.jpg" alt="description of image"&gt;
+                - Example: &lt;img src="image.jpg" alt="description of image" width="300" height="200"&gt;
+                - Image alignment:
+                - Use the align attribute to specify the alignment of an image
+                - Example: &lt;img src="image.jpg" alt="description" align="left"&gt;
+                - Example: &lt;img src="image.jpg" alt="description" align="right"&gt;
+                - Image border:
+                - Use the border attribute to add a border around an image
+                - Example: &lt;img src="image.jpg" alt="description" border="1"&gt;
+                - Image link:
+                - Use the &lt;a&gt; tag to create a link around an image
+                - Example: &lt;a href="url"&gt;&lt;img src="image.jpg" alt="description"&gt;&lt;/a&gt;
+                - Image gallery:
+                - Use the &lt;div&gt; tag to create an image gallery
+                - Use the &lt;img&gt; tag to display each image
+                - Example:
+                &lt;div class="gallery"&gt;
+                &lt;img src="image1.jpg" alt="I
+                &lt;img src="image1.jpg" alt="Image 1"&gt;
+                &lt;img src="image2.jpg" alt="Image 2"&gt;
+                &lt;img src="image3.jpg" alt="Image 3"&gt;
+                &lt;/div&gt;
+                - flex box:
+                - Use the display: flex; property to create a flex container
+                - Use the gap property to create space between flex items
+                - Example:
+                .gallery {
+                display: flex;
+                gap: 10px;
+                }
+                .gallery img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                }
+                </p>
+            </div>
+            <div class="card" id="Creating Tables">
+                <span class="color-c">
+                    <h2>Creating Tables</h2>
+                </span>
+                <div>
+                    <a href="#">workshop</a>
+                </div>
+                <p>
+                HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p> <br>
+                - &lt;table&gt;: Table <br>
+                - &lt;tr&gt;: Table row <br>
+                - &lt;th&gt;: Table header <br>
+                - &lt;td&gt;: Table data/cell <br>
+                </p>
+            </div>
+            <div class="card" id="HTML Forms">
+                <span class="color-c">
+                    <h2>HTML Forms</h2>
+                </span>
+                <p>
+                HTML Forms
+                HTML forms are defined with the &lt;form&gt; tag...
+                หัวข ้อเกี่ยวกับฟอร์ม
+                1. โครงสร้างพื้นฐานของฟอร์ม
+                - &lt;form>: ใชเ้ป็นตวัครอบขอ้มูลในฟอรม์
+                - action และ method (GET/POST): การก าหนดปลายทางและวธิสี ง่ ขอ้มลู
+                2. ชนิดของอินพุต (Input Types)
+                - &lt;input>: ชนดิ ตา่ ง ๆ เชน่ text, password, email, number,
+                radio, checkbox, date, file
+                - &lt;textarea>: ชอ่ งขอ้ความขนาดใหญ่
+                - &lt;select> และ &lt;option>: เมนูแบบเลื่อนลง
+                - &lt;datalist>: รายการตัวเลือกที่ก าหนดไว ้ล่วงหน้า
+                - &lt;optgroup>: กลุ่มตัวเลือก
+                - &lt;fieldset> และ &lt;legend>: กลุ่มข ้อมูลที่เกี่ยวข ้อง
+                3. ปุ่ มในฟอร์ม
+                - &lt;button>: ปุ่ มทั่วไป
+                - &lt;input type="submit"> และ &lt;input type="reset">: ป่มุ สง่ และลา้งขอ้ มลู
+                - &lt;input type="button">: ปุ่ มทั่วไป
+                - &lt;input type="image">: ปุ่ มรูปภาพ
+                - &lt;input type="file">: ปุ่ มอัพโหลดไฟล์
+                4. การจัดการป้ายก ากับ (Labels)
+                - &lt;label>: เพอื่ เชอื่ มกับ &lt;input> (ชว่ ยเพมิ่ การเขา้ถงึ)
+                - for: ระบุ id ของอินพุตที่เกี่ยวข ้อง
+                5. การตรวจสอบข ้อมูล (Validation)
+                - คณุ สมบัติเชน่ required, min, max, pattern
+                - การใช ้JavaScript เพื่อท าการตรวจสอบ
+                6. ฟอร์มแบบสมัยใหม่ (HTML5)
+                - placeholder: ตัวอย่างขอ้ความในชอ่ งอนิ พุต
+                - autofocus: ให ้ฟอร์มเริ่มต ้นโฟกัส
+                7. การสง่ ฟอรม์ (Form Submission)
+                - การสง่ ขอ้มลู ไปยังเซริฟ์ เวอร์
+                - การใช ้JavaScript (เชน่ onsubmit)
+                Semantic HTML elements clearly define the content of a web page...
+                - &lt;header&gt;: Defines a header for a document or section
+                - &lt;nav&gt;: Defines navigation links
+                - &lt;section&gt;: Defines a section in a document
+                - &lt;article&gt;: Defines an article
+                - &lt;aside&gt;: Defines content aside from the page content
+                - &lt;footer&gt;: Defines a footer for a document or section
+            </p>
+            </div>
+            <div class="card" id="Semantic HTML">
+                <span class="color-c">
+                    <h2>Semantic HTML</h2>
+                </span>
+                <p>
+                Semantic HTML elements clearly define the content of a web page... <br>
+                - &lt;header&gt;: Defines a header for a document or section <br>
+                - &lt;nav&gt;: Defines navigation links <br>
+                - &lt;section&gt;: Defines a section in a document <br>
+                - &lt;article&gt;: Defines an article <br>
+                - &lt;aside&gt;: Defines content aside from the page content <br>
+                - &lt;footer&gt;: Defines a footer for a document or section
+                </p>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
