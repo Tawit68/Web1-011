@@ -44,6 +44,18 @@ body {
 
     /* สีขอบ */
     --border-color: rgb(255, 253, 253);
+
+    /* seticon */
+    /* สีพื้อนหลัง */
+    --seticon-color-b:#a9caf7;
+    --seticon-color-p:#d4acf1;
+    --seticon-color-g: #bcf1d8;
+    --seticon-color-o: #f5e3bf;
+    /* สีอักษร */
+    --seticon-color-h2-b:rgb(78, 88, 241);
+    --seticon-color-h2-p:rgb(245, 74, 236);
+    --seticon-color-h2-g:rgb(8, 241, 78);
+    --seticon-color-h2-o:rgb(240, 167, 11);
 }
 
 /* =========================
@@ -195,7 +207,72 @@ footer p {
     text-align: center;
 }
 
+/* ====================================
+                     seticon
+========================================= */
+.info-section {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #ddd;
+    margin-top: 20px;
+}
+.info-title {
+    text-align: center;
+    font-size: 28px;
+    color: #424040;
+    margin-bottom: 30px;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
+.info-grid h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-grid p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+.info-card-b {
+    background-color: var(--seticon-color-b);
+    border-radius: 10px;
+    padding: 30px;
+}
+.info-card-p {
+    background-color: var(--seticon-color-p);
+    border-radius: 10px;
+    padding: 30px;
+}
+.info-card-g {
+    background-color: var(--seticon-color-g);
+    border-radius: 10px;
+    padding: 30px;
+}
+.info-card-o {
+    background-color: var(--seticon-color-o);
+    border-radius: 10px;
+    padding: 30px;
+}
+.-b {
+    color: var(--seticon-color-h2-b);
+}
+.-p {
+    color: var(--seticon-color-h2-p);
+}
+.-g {
+    color: var(--seticon-color-h2-g);
+}
+.-o {
+    color: var(--seticon-color-h2-o);
+}
 /* =========================
             Resto
 ============================*/
