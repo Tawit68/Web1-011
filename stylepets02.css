@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+
+  background: linear-gradient(
+    135deg,
+    rgb(230, 227, 227) 0%,
+    #ffffff 50%,
+    rgb(79, 128, 128) 100%
+  );
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+:root {
+  /* สีหลักของเว็บ */
+  --primary-color: blue;
+  --primary-dark-color: rgb(255, 255, 255);
+  --secondary-color: rgb(214, 7, 255);
+
+  /* สีข้อความ */
+  --text-color: black;
+  --text-color-p: rgb(95, 95, 95);
+  --text-nav: rgb(36, 34, 34);
+  --text-white: white;
+
+  /* สีพื้น */
+  --btn-bg-color: rgb(167, 38, 167);
+  --footer-bg-color: black;
+  --card-white: white;
+  --muted-backgroud-color: #b9b9b9;
+
+  /* สีเงา */
+  --header-shadow: 0 0 15px rgba(2, 5, 8, 0.3);
+  --card-shadow: 0 3px 10px rgb(18, 37, 248);
+
+  /* สีขอบ */
+  --border-color: rgb(248, 228, 228);
+
+  /* seticon */
+  /* สีพื้อนหลัง */
+  --seticon-color-b: #a9caf7;
+  --seticon-color-p: #d4acf1;
+  --seticon-color-g: #bcf1d8;
+  --seticon-color-o: #f5e3bf;
+  /* สีอักษร */
+  --seticon-color-h2-b: rgb(78, 88, 241);
+  --seticon-color-h2-p: rgb(245, 74, 236);
+  --seticon-color-h2-g: rgb(8, 241, 78);
+  --seticon-color-h2-o: rgb(240, 167, 11);
+}
+
+/* =========================
+            Header
+============================*/
+.header {
+  background-color: var(--primary-dark-color);
+  box-shadow: var(--header-shadow);
+
+  position: sticky;
+  top: 0;
+  z-index: 10px;
+
+  background-color: rgba(85, 94, 94, 0.322);
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120px;
+
+  gap: 15px;
+
+  /* padding: 40px 5px;
+    padding-block: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; */
+}
+.header-content p {
+  color: var(--text-color-p);
+}
+
+.header-title {
+  color: var(--primary-color);
+
+  font-size: clamp(2rem, 5vw, 3rem);
+
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+/* =========================
+            Nav
+============================*/
+nav {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+.category-nav label {
+    text-decoration: none;
+    color: var(--text-nav);
+
+    padding: 0.65rem 1.2rem;
+    box-shadow: var(--header-shadow);
+    border-radius: 999px;
+    
+    margin-right: 0.5rem;
+    transition: transform 0.5s;
+    
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.category-nav label:hover {
+    transform: translateY(-10px);
+}
+
+nav a:hover {
+    transform: translateY(-10px);
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
+
+
+.filter-radio {
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+#filter-all:checked ~ .category-nav label[for="filter-all"],
+#filter-dog:checked ~ .category-nav label[for="filter-dog"],
+#filter-cat:checked ~ .category-nav label[for="filter-cat"],
+#filter-bird:checked ~ .category-nav label[for="filter-bird"],
+#filter-fish:checked ~ .category-nav label[for="filter-fish"],
+#filter-small:checked ~ .category-nav label[for="filter-small"]
+{
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
+/* ซ่อนหัวข้อหมวดหมู่ */
+.category-hide {
+  display: none;
+}
+/* ซ่อนหัวข้อการเเสดง */
+#filter-all:checked ~ main .show-all,
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small:checked ~ main .show-small
+{
+  display: inline;
+}
+
+/* ซ่อนการ์ดสัตว์ */
+#filter-dog:checked ~ main  .pet-card,
+#filter-cat:checked ~ main .pet-card,
+#filter-bird:checked ~ main .pet-card,
+#filter-fish:checked ~ main .pet-card,
+#filter-small:checked ~ main .pet-card
+{
+  display: none;
+}
+
+/* โชว์การ์ดสัตว์ */
+#filter-dog:checked ~ main .show-dog,
+#filter-cat:checked ~ main .show-cat,
+#filter-bird:checked ~ main .show-bird,
+#filter-fish:checked ~ main .show-fish,
+#filter-small:checked ~ main .show-small
+{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+a.active {
+    background-color: var(--btn-bg-color);
+    color: var(--text-white);
+}
+
+/* =========================
+            Main
+============================*/
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.pet-card img {
+  height: 16.25rem;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.pet-card {
+  border: var(--border-color);
+  box-shadow: var(--header-shadow);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition:
+    0.3s,
+    box-shadow 0.5;
+}
+
+.pet-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--card-shadow);
+}
+
+.pet-content {
+  padding: 1.25rem;
+}
+
+.pet-content p {
+  direction: none;
+}
+
+.pet-content h2 {
+  color: var(--primary-color);
+}
+
+.breed {
+  color: var(--text-color-p);
+}
+
+/* ========================================
+                   form-radio             
+========================================*/
+.form-radio {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px #ddd;
+  margin-top: 20px;
+}
+
+.form-radio h2 {
+  text-align: center;
+  color: var(--primary-color);
+}
+.form-radio p {
+  text-align: center;
+  color: #424040;
+  margin-bottom: 0.5rem;
+}
+
+
+.form-radio fieldset {
+  padding: 1.5rem;
+  border: 3px solid var(--border-color);
+  border: 0.7rem;
+}
+
+.form-radio legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  /* text-align: center; */
+  gap: 0.5;
+}
+
+.radio-option {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  
+  flex-wrap: wrap ;
+}
+
+.radio-option label {
+  background-color: var(--muted-backgroud-color);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+
+  cursor: pointer;
+}
+
+.radio-option input {
+  accent-color: var(--secondary-color);
+}
+
+.radio-option input:checked + label {
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
+
+.reset-btn {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin: 1.5rem auto 0;
+
+  display: block;
+  cursor: pointer;
+
+}
+
+
+/* =========================
+            Footer
+============================*/
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--text-white);
+
+  align-items: center;
+  padding-block: 2rem;
+
+  margin-top: 2rem;
+}
+footer p {
+  text-align: center;
+}
+
+/* ====================================
+                     seticon
+========================================= */
+.info-section {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px #ddd;
+  margin-top: 20px;
+}
+.info-title {
+  text-align: center;
+  font-size: 28px;
+  color: #424040;
+  margin-bottom: 30px;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.info-grid h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info-grid p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+.info-card-b {
+  background-color: var(--seticon-color-b);
+  border-radius: 10px;
+  padding: 30px;
+}
+.info-card-p {
+  background-color: var(--seticon-color-p);
+  border-radius: 10px;
+  padding: 30px;
+}
+.info-card-g {
+  background-color: var(--seticon-color-g);
+  border-radius: 10px;
+  padding: 30px;
+}
+.info-card-o {
+  background-color: var(--seticon-color-o);
+  border-radius: 10px;
+  padding: 30px;
+}
+.-b {
+  color: var(--seticon-color-h2-b);
+}
+.-p {
+  color: var(--seticon-color-h2-p);
+}
+.-g {
+  color: var(--seticon-color-h2-g);
+}
+.-o {
+  color: var(--seticon-color-h2-o);
+}
+/* =========================
+            Resto
+============================*/
