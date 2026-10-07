@@ -1,0 +1,342 @@
+/* =========================
+   พื้นฐาน
+========================= */
+
+* {
+    box-sizing: border-box;
+    /* ให้ width รวม padding และ border */
+}
+
+body {
+    margin: 0;
+    /* เอาขอบเริ่มต้นออก */
+
+    font-family: Arial;
+    /* ฟอนต์ */
+
+    background: #f4f8ff;
+    /* สีพื้นหลัง */
+
+    color: #333;
+    /* สีตัวอักษร */
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+    display: flex;
+    /* ใช้ Flex */
+
+    justify-content: space-between;
+    /* แยกซ้ายและขวา */
+
+    align-items: center;
+    /* จัดให้อยู่กึ่งกลาง */
+
+    padding: 20px 50px;
+    /* ระยะห่างด้านใน */
+
+    background: #4f46e5;
+    /* สีพื้นหลัง */
+
+    color: white;
+    /* สีตัวอักษร */
+}
+
+.menu {
+    display: flex;
+    /* ให้เมนูเรียงแนวนอน */
+
+    gap: 25px;
+    /* ระยะห่างเมนู */
+}
+
+.menu a {
+    color: white;
+    /* สีลิงก์ */
+
+    text-decoration: none;
+    /* เอาขีดเส้นใต้ออก */
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    display: grid;
+    /* ใช้ Grid */
+
+    grid-template-columns: 1fr 1fr;
+    /* Desktop = 2 ช่อง */
+
+    gap: 30px;
+    /* ระยะห่าง */
+
+    padding: 60px;
+    /* ระยะห่างด้านใน */
+
+    align-items: center;
+    /* จัดให้อยู่ตรงกลาง */
+}
+
+.hero h1 {
+    color: #3730a3;
+    /* สีหัวข้อ */
+
+    font-size: 40px;
+    /* ขนาดตัวอักษร */
+}
+
+.hero img {
+    width: 100%;
+    /* รูปเต็มความกว้าง */
+
+    height: 300px;
+    /* ความสูง */
+
+    object-fit: cover;
+    /* รูปไม่เบี้ยว */
+
+    border-radius: 20px;
+    /* มุมโค้ง */
+}
+
+
+/* =========================
+   Button
+========================= */
+
+button {
+    padding: 12px 25px;
+    /* ขนาดปุ่ม */
+
+    background: #f97316;
+    /* สีปุ่ม */
+
+    color: white;
+    /* สีตัวอักษร */
+
+    border: none;
+    /* ไม่มีขอบ */
+
+    border-radius: 8px;
+    /* มุมโค้ง */
+
+    cursor: pointer;
+    /* เมาส์เป็นรูปมือ */
+}
+
+button:hover {
+    background: #ea580c;
+    /* เปลี่ยนสีเมื่อเอาเมาส์ชี้ */
+}
+
+
+/* =========================
+   Animal
+========================= */
+
+.animals {
+    padding: 50px;
+    /* ระยะห่าง */
+}
+
+.animals h2 {
+    text-align: center;
+    /* จัดกลาง */
+
+    color: #3730a3;
+    /* สีหัวข้อ */
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.cards {
+    display: grid;
+    /* ใช้ Grid */
+
+    grid-template-columns: repeat(4, 1fr);
+    /* Desktop = 4 ช่อง */
+
+    gap: 20px;
+    /* ระยะห่าง */
+}
+
+.card {
+    background: white;
+    /* สีพื้น */
+
+    padding: 15px;
+    /* ระยะห่างด้านใน */
+
+    border-radius: 15px;
+    /* มุมโค้ง */
+
+    box-shadow: 0 4px 10px #ccc;
+    /* เงา */
+
+    text-align: center;
+    /* จัดข้อความกลาง */
+}
+
+.card img {
+    width: 100%;
+    /* รูปเต็ม Card */
+
+    height: 180px;
+    /* ความสูงรูป */
+
+    object-fit: cover;
+    /* รูปไม่เบี้ยว */
+
+    border-radius: 10px;
+    /* มุมโค้ง */
+}
+
+.card h3 {
+    color: #4f46e5;
+    /* สีชื่อสัตว์ */
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form {
+    max-width: 500px;
+    /* กว้างสุด 500px */
+
+    margin: 30px auto;
+    /* จัดกลาง */
+
+    padding: 30px;
+    /* ระยะห่างด้านใน */
+
+    background: white;
+    /* สีพื้น */
+
+    border-radius: 15px;
+    /* มุมโค้ง */
+
+    display: grid;
+    /* ใช้ Grid */
+
+    gap: 10px;
+    /* ระยะห่าง */
+
+    box-shadow: 0 4px 10px #ccc;
+    /* เงา */
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+    /* เต็มความกว้าง */
+
+    padding: 12px;
+    /* ระยะห่าง */
+
+    border: 1px solid #ccc;
+    /* ขอบ */
+
+    border-radius: 8px;
+    /* มุมโค้ง */
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+
+/* =========================
+   1. DESKTOP
+   มากกว่า 1024px
+========================= */
+
+/* ค่าเริ่มต้นด้านบนคือ Desktop */
+
+/*
+   Cards = 4 ช่อง
+   Hero = 2 ช่อง
+   Navbar = แนวนอน
+*/
+
+
+/* =========================
+   2. TABLET
+   ไม่เกิน 1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        /* Tablet = 2 ช่อง */
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        /* Tablet = 2 ช่อง */
+    }
+
+    .animals {
+        padding: 30px;
+        /* ลดระยะห่าง */
+    }
+
+}
+
+
+/* =========================
+   3. MOBILE
+   ไม่เกิน 768px
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        /* Navbar เป็นแนวตั้ง */
+
+        gap: 10px;
+        /* ระยะห่าง */
+    }
+
+
+    .hero {
+        grid-template-columns: 1fr;
+        /* Mobile = 1 ช่อง */
+
+        padding: 30px;
+        /* ลดระยะห่าง */
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+        /* ลดขนาดหัวข้อ */
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+        /* Mobile = 1 ช่อง */
+    }
+
+
+    .animals {
+        padding: 20px;
+        /* ลดระยะห่าง */
+    }
+
+}

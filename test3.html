@@ -1,0 +1,159 @@
+<!DOCTYPE html> <!-- บอกว่าใช้ HTML5 -->
+<html lang="en"> <!-- เริ่มต้นหน้า HTML -->
+
+<head>
+    <meta charset="UTF-8"> <!-- รองรับภาษาไทย -->
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- ทำให้เว็บ Responsive บนมือถือ -->
+
+    <title>Animal World</title> <!-- ชื่อหน้าเว็บ -->
+
+    <link rel="stylesheet" href="test3.css">
+    <!-- เชื่อมไฟล์ CSS -->
+</head>
+
+
+<body> <!-- เนื้อหาที่แสดงบนหน้าเว็บ -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>🐾 Animal World</h2> <!-- ชื่อเว็บ -->
+
+        <div class="menu"> <!-- กลุ่มเมนู -->
+            <a href="#">Home</a> <!-- ลิงก์หน้าแรก -->
+            <a href="#">Animals</a> <!-- ลิงก์สัตว์ -->
+            <a href="#">Contact</a> <!-- ลิงก์ติดต่อ -->
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div>
+            <h1>Welcome to Animal World 🐶</h1>
+            <!-- หัวข้อใหญ่ -->
+
+            <p>Learn about different animals.</p>
+            <!-- ข้อความ -->
+
+            <button>ดูสัตว์ทั้งหมด</button>
+            <!-- ปุ่ม -->
+        </div>
+
+        <img src="dog.jpg" alt="Dog">
+        <!-- รูปภาพ -->
+    </section>
+
+
+    <!-- Animal List -->
+    <section class="animals">
+
+        <h2>🐾 Animal List</h2>
+        <!-- หัวข้อรายการสัตว์ -->
+
+
+        <div class="cards">
+        <!-- กล่องรวม Card -->
+
+
+            <!-- Card 1 -->
+            <div class="card">
+
+                <img src="dog.jpg" alt="Dog">
+                <!-- รูปสุนัข -->
+
+                <h3>🐶 Dog</h3>
+                <!-- ชื่อสัตว์ -->
+
+                <p>สุนัขเป็นสัตว์เลี้ยงที่ซื่อสัตย์</p>
+                <!-- รายละเอียด -->
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+
+                <img src="cat.jpg" alt="Cat">
+                <!-- รูปแมว -->
+
+                <h3>🐱 Cat</h3>
+                <!-- ชื่อสัตว์ -->
+
+                <p>แมวเป็นสัตว์เลี้ยงที่น่ารัก</p>
+                <!-- รายละเอียด -->
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+
+                <img src="lion.jpg" alt="Lion">
+                <!-- รูปสิงโต -->
+
+                <h3>🦁 Lion</h3>
+                <!-- ชื่อสัตว์ -->
+
+                <p>สิงโตเป็นสัตว์นักล่า</p>
+                <!-- รายละเอียด -->
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="card">
+
+                <img src="elephant.jpg" alt="Elephant">
+                <!-- รูปช้าง -->
+
+                <h3>🐘 Elephant</h3>
+                <!-- ชื่อสัตว์ -->
+
+                <p>ช้างเป็นสัตว์ขนาดใหญ่</p>
+                <!-- รายละเอียด -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Form -->
+    <section class="form">
+
+        <h2>📩 Contact Us</h2>
+        <!-- หัวข้อ Form -->
+
+        <input type="text"
+               placeholder="Name">
+        <!-- ช่องกรอกชื่อ -->
+
+        <input type="email"
+               placeholder="Email">
+        <!-- ช่องกรอก Email -->
+
+
+        <label>
+            <input type="radio" name="animal">
+            Dog
+        </label>
+        <!-- ตัวเลือกสุนัข -->
+
+
+        <label>
+            <input type="radio" name="animal">
+            Cat
+        </label>
+        <!-- ตัวเลือกแมว -->
+
+
+        <button type="submit">
+            Submit
+        </button>
+        <!-- ปุ่มส่งข้อมูล -->
+
+    </section>
+
+</body>
+</html>

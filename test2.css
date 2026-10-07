@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/* =================
+   Navbar : FLEX
+================= */
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+
+/* =================
+   Hero : GRID
+================= */
+
+.hero {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    padding: 50px;
+
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+
+/* =================
+   Form
+================= */
+
+.form {
+    max-width: 500px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    gap: 10px;
+
+    padding: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 100%;
+
+    padding: 10px;
+}
+
+
+/* =================
+   Cards : GRID
+================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 50px;
+}
+
+.card {
+    padding: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+}
+
+
+/* =================
+   Button
+================= */
+
+button {
+    padding: 10px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* =================
+   RESPONSIVE
+================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Cards */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
